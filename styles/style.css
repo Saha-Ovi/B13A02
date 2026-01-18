@@ -37,7 +37,8 @@
 
 
 /* header section */
-header {
+header,
+.about-bg {
     background-color: #1A0B2E;
 }
 
@@ -141,12 +142,71 @@ nav button {
     font-weight: bolder;
 }
 
+.banner-description {
+    color: #ffffff88;
+}
+
 .banner-content button {
     margin-top: 24px;
     display: inline-flex;
     gap: 2px;
 }
 
+/* about section */
+
+.about-section {
+    max-width: 1270px;
+    margin: 0 auto;
+}
+
+.about-content {
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+}
+
+.about-content h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #ffffff88;
+    line-height: 1.25rem;
+
+}
+
+.about-paragraph {
+    margin-top: 25px;
+
+}
+
+hr {
+    color: #ffffff88;
+}
+
+.about-card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 80px;
+    text-align: center;
+}
+
+.about-card h4 {
+    font-size: 3rem;
+    color: #00FF88;
+    margin-bottom: 5px;
+}
+
+.about-card p {
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: #ffffff88;
+
+}
 
 
 
@@ -202,5 +262,19 @@ nav button {
 
     .tooltip {
         top: 10px;
+    }
+
+    .about-content {
+        padding: 40px 20px;
+    }
+
+    hr
+    {
+        margin: 0px 15px;
+    }
+
+    .about-card-container {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
     }
 }
