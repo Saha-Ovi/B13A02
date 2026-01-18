@@ -208,6 +208,74 @@ hr {
 
 }
 
+/* tech wave  */
+.wave-bg {
+    background-color: #230E3D;
+}
+
+.wave-section {
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 100px 120px;
+}
+
+.wave-section-title {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.wave-section-card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.wave-section-card {
+    padding: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    border-radius: 40px;
+
+}
+
+.wave-section-card img {
+    width: 30px;
+    margin-bottom: 16px;
+}
+
+.wave-section-card h4 {
+    color: #FFFFFF;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.wave-section-card p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff88;
+}
+
+.item-1 {
+    grid-row: span 2;
+}
+
+.item-2,
+.item-3,
+.item-4 {
+    grid-column: span 2;
+}
+
+
+
+
+
+
+
 
 
 
@@ -268,8 +336,7 @@ hr {
         padding: 40px 20px;
     }
 
-    hr
-    {
+    hr {
         margin: 0px 15px;
     }
 
@@ -277,4 +344,32 @@ hr {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
     }
+
+    .wave-section-title {
+        text-align: center;
+    }
+
+    .wave-section-card-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    .wave-section {
+
+        padding: 20px;
+    }
+
+    .wave-section-title {
+        font-size: 1.5rem;
+    }
+    .item-1 {
+        grid-row: span 1;
+    }
+    .item-2,
+    .item-3,
+    .item-4 {
+        grid-column: span 1;
+    }
+
+
 }
