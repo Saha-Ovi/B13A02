@@ -34,12 +34,13 @@
     border: 1px solid #00FF88;
     line-height: 1.2rem;
 }
+/* Background color */
 
-
-/* header section */
-header,
-.about-bg {
+.primary-bg {
     background-color: #1A0B2E;
+}
+.secondary-bg {
+    background-color: #230E3D;
 }
 
 /* nav bar section */
@@ -112,7 +113,6 @@ nav button {
     position: relative;
     top: 10%;
 }
-
 .banner-image img {
 
     display: grid;
@@ -121,7 +121,6 @@ nav button {
     width: 30%;
     /* right: 5%; */
 }
-
 .tooltip {
     background-color: #00FF88;
     padding: 8px 8px;
@@ -131,12 +130,10 @@ nav button {
     right: 30px;
     color: #1A0B2E;
 }
-
 .banner-content {
     text-align: center;
     color: #FFFFFF;
 }
-
 .banner-content h2 {
     font-size: 3.75rem;
     font-weight: bolder;
@@ -209,9 +206,7 @@ hr {
 }
 
 /* tech wave  */
-.wave-bg {
-    background-color: #230E3D;
-}
+
 
 .wave-section {
     max-width: 1270px;
@@ -269,10 +264,71 @@ hr {
 .item-4 {
     grid-column: span 2;
 }
-
-
-
-
+/* feature-section */
+.feature-section
+{
+    max-width: 1270px;
+    margin: 0 auto; 
+    padding-top:120px ;
+}
+.feature-tittle
+{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-bottom: 40px;
+}
+.feature-card-container
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+}
+.feature-card
+{
+    
+    border-radius: 10px;
+    background-color: #250D44;
+    max-width: 380px;
+}
+iframe
+{
+    border-radius: 10px 10px 0px 0px;
+ 
+}
+.feature-card h5
+{
+    font-size: 1.2rem;
+    padding:15px 15px 5px;
+    color: #FFFFFF;
+}
+.feature-card p
+{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    padding:0 15px;
+    color: #ffffff88;
+    text-align: left;
+}
+.feature-image
+{
+    display: inline-flex;
+    align-items: center;
+    gap:4px;
+    padding: 5px 15px;
+    color: #00FF88;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.feature-image img
+{
+    margin-right: 2px;
+}
+.time-align
+{
+    margin-top: 20px;
+}
 
 
 
@@ -349,8 +405,9 @@ hr {
         text-align: center;
     }
 
-    .wave-section-card-container {
+    .wave-section-card-container,.feature-card-container {
         grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
 
     }
 
@@ -370,6 +427,5 @@ hr {
     .item-4 {
         grid-column: span 1;
     }
-
 
 }
