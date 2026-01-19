@@ -452,8 +452,14 @@ iframe {
         top: 10px;
     }
 
+
     .about-content {
         padding: 40px 20px;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+
     }
 
     hr {
@@ -463,6 +469,12 @@ iframe {
     .about-card-container {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
+    }
+
+    .about-card h4 {
+        font-size: 2.5rem;
+        text-align: center;
+
     }
 
     .wave-section-title {
@@ -494,12 +506,15 @@ iframe {
     .item-4 {
         grid-column: span 1;
     }
-    .feature-tittle
-    {
+
+    .feature-tittle {
         text-align: center;
+        font-size: 1.75rem;
+       
     }
+
     .feature-card-container {
-        grid-template-columns: repeat(1, 1fr);   
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .host-section,
