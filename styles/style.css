@@ -13,6 +13,18 @@
 }
 
 /* shared style */
+
+
+@keyframes ping-pong {
+    from
+    {
+        transform: translateX(0);
+    }
+    to
+    {
+        transform: translateY(10px);
+    }
+}
 .btn-primary {
     padding: 13px 16px;
     color: #FFFFFF;
@@ -22,6 +34,8 @@
     background: linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1));
     border: none;
     line-height: 1.2rem;
+    cursor: pointer;
+    
 }
 
 .btn-secondary {
@@ -33,6 +47,7 @@
     background: transparent;
     border: 1px solid #00FF88;
     line-height: 1.2rem;
+    cursor: pointer;
 }
 
 /* Background color */
@@ -59,6 +74,7 @@ nav {
 nav h2 {
     margin-top: 24px;
     font-size: 2rem;
+    cursor: pointer;
 }
 
 .gradient {
@@ -133,7 +149,14 @@ nav button {
     top: 35px;
     right: 30px;
     color: #1A0B2E;
+    cursor: pointer;
+    animation: ping-pong 2s infinite alternate;
+    
 }
+/* .tooltip:hover
+{
+    transform: scale(1.5) rotate(360deg) translateX(-20px);
+} */
 
 .banner-content {
     text-align: center;
@@ -435,26 +458,6 @@ footer {
 
     color: #ffffff88;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* responsive query */
 
