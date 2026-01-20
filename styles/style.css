@@ -14,7 +14,6 @@
 
 /* shared style */
 
-
 @keyframes ping-pong {
     from
     {
@@ -219,6 +218,7 @@ hr {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 80px;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .about-card h4 {
@@ -264,6 +264,11 @@ hr {
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 40px;
 
+}
+.wave-section-card:hover
+{
+    background-color: #533C72;
+    cursor: pointer;
 }
 
 .wave-section-card img {
@@ -319,6 +324,11 @@ hr {
     border-radius: 10px;
     background-color: #250D44;
     max-width: 380px;
+}
+.feature-card:hover
+{
+    background-color: #533C72;
+    cursor: pointer;
 }
 
 iframe {
@@ -382,6 +392,10 @@ iframe {
     padding: 40px;
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 20px;
+}
+.host-card-container:hover
+{
+    background-color:#533C72
 }
 
 .host-card-description h4 {
